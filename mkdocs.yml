@@ -1,0 +1,62 @@
+---
+# Project information
+site_name: "Home Assistant NRE.Com.Net Add-ons"
+site_url: "https://github.com/NRE-Com-Net/hassio-addons"
+site_description: "The primary goal of this project is to provide you (as a Home Assistant user) with add-ons from me."
+site_author: "Steven Kurz"
+copyright: "Copyright 2025 - Steven Kurz"
+
+# Repository
+repo_name: "hassio-addons"
+repo_url: "https://github.com/NRE-Com-Net/hassio-addons"
+edit_uri: ""
+
+# Theme configuration
+theme:
+  name: "material"
+  logo: "https://avatars3.githubusercontent.com/u/30772201?s=200&v=4"
+  language: "en"
+  palette:
+    primary: "light-blue"
+    accent: "blue"
+  font:
+    text: "Exo2"
+    code: "Roboto Mono"
+  feature:
+    - tabs
+extra_css:
+  - css/extra.css
+
+# Customization
+extra:
+  manifest: "manifest.webmanifest"
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: "https://github.com/NemesisRE"
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# The pages to serve
+nav:
+  - "Our Add-ons": "index.md"
+  - "Contributing": "contributing.md"
+  - "Code of Conduct": "code-of-conduct.md"
+  - "License": "license.md"

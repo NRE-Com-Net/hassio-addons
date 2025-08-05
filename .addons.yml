@@ -1,0 +1,7 @@
+---
+channel: stable
+addons:
+  snapmaker-monitor:
+    repository: NemesisRE/hassio-addon-snapmaker-monitor
+    target: snapmaker-monitor
+    image: ghcr.io/NemesisRE/hassio-addon-snapmaker-monitor/{arch}
