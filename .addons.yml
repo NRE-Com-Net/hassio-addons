@@ -4,4 +4,4 @@ addons:
   snapmaker-monitor:
     repository: nre-com-net/hassio-addon-snapmaker-monitor
     target: snapmaker-monitor
-    image: ghcr.io/nre-com-net/hassio-addon-snapmaker-monitor/{arch}
+    image: ghcr.io/nre-com-net/snapmaker-monitor/{arch}
