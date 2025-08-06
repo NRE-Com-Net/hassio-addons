@@ -4,6 +4,7 @@
 ![Maintenance][maintenance-shield]
 [![License][license-shield]](LICENSE.md)
 
+[![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
 ## About
@@ -13,12 +14,18 @@ add-ons for Home Assistant easily. This repository is one of those repositories,
 providing extra Home Assistant add-ons for your installation.
 
 The primary goal of this project is to provide you (as a Home Assistant user)
-with additional, add-ons that allow you to take your automated home to the next level.
+with additional, high quality, add-ons that allow you to take your automated
+home to the next level.
 
 ## Installation
 
-Adding this add-ons repository to your Home Assistant instance is pretty easy.
-In the Home Assistant add-on store, a possibility to add a repository is provided.
+In general, there is no need to install this repository on your
+Home Assistant instance. It is activated and added by Home Assistant
+by default.
+
+However, if the repository is missing on your setup, adding this add-ons
+repository to your Home Assistant instance is pretty easy. In the
+Home Assistant add-on store, a possibility to add a repository is provided.
 
 Use the following URL to add this repository:
 
@@ -27,17 +34,6 @@ https://github.com/NRE-Com-Net/hassio-addons
 ```
 
 ## Add-ons provided by this repository
-
-### &#10003; [Snapmaker Monitor][addon-snapmaker-monitor]
-
-![Latest Version][snapmaker-monitor-version-shield]
-![Supports armv7 Architecture][snapmaker-monitor-armv7-shield]
-![Supports aarch64 Architecture][snapmaker-monitor-aarch64-shield]
-![Supports amd64 Architecture][snapmaker-monitor-amd64-shield]
-
-Network-wide ads & trackers blocking DNS server
-
-[:books: Snapmaker Monitor add-on documentation][addon-doc-snapmaker-monitor]
 
 ## Releases
 
@@ -51,19 +47,37 @@ based on the following:
 
 ## Support
 
-You could open an issue here on GitHub. Note, we use a separate
+Got questions?
+
+You have several options to get them answered:
+
+- The Home Assistant Community Add-ons [Discord Chat Server][discord]
+- The Home Assistant [Community Forum][forum].
+- The Home Assistant [Discord Chat Server][discord-ha].
+- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+
+You could also open an issue here on GitHub. Note, we use a separate
 GitHub repository for each add-on. Please ensure you are creating the issue
 on the correct GitHub repository matching the add-on.
 
-- [Open an issue for the add-on: Snapmaker Monitor][snapmaker-monitor-issue]
 
 For a general repository issue or add-on ideas [open an issue here][issue]
+
+## Adding a new add-on
+
+We are currently not accepting third party add-ons to this repository.
+
+For questions, please contact [Franck Nijhof][frenck]:
+
+- Drop him an email: frenck@addons.community
+- Chat with him on [Discord Chat][discord]
+- Message him via the forums: [frenck][forum-frenck]
 
 ## License
 
 MIT License
 
-Copyright (c) 2025 Steven 'NemesisRE' Kurz
+Copyright (c) 2017-2024 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -83,19 +97,20 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[addon-snapmaker-monitor]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/tree/v1.0.0
-[addon-doc-snapmaker-monitor]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/blob/v1.0.0/README.md
-[snapmaker-monitor-issue]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/issues
-[snapmaker-monitor-version-shield]: https://img.shields.io/badge/version-v1.0.0-blue
-[snapmaker-monitor-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green
-[snapmaker-monitor-amd64-shield]: https://img.shields.io/badge/amd64-yes-green
-[snapmaker-monitor-armv7-shield]: https://img.shields.io/badge/armv7-yes-green
-[forum-NemesisRE]: https://community.home-assistant.io/u/NemesisRE/?u=NemesisRE
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen
-[forum]: https://community.home-assistant.io?u=NemesisRE
-[NemesisRE]: https://github.com/NemesisRE
+[awesome-shield]: https://img.shields.io/badge/awesome%3F-yes-brightgreen.svg
+[awesome]: https://awesome-ha.com
+[discord-ha]: https://discord.gg/c5DvZ4e
+[discord-shield]: https://img.shields.io/discord/478094546522079232.svg
+[discord]: https://discord.me/hassioaddons
+[forum-frenck]: https://community.home-assistant.io/u/frenck/?u=frenck
+[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
+[forum]: https://community.home-assistant.io?u=frenck
+[frenck]: https://github.com/frenck
+[gitlabci-shield]: https://gitlab.com/NRE-Com-Net/hassio-addons/badges/master/pipeline.svg
+[gitlabci]: https://gitlab.com/NRE-Com-Net/hassio-addons/pipelines
 [issue]: https://github.com/NRE-Com-Net/hassio-addons/issues
-[license-shield]: https://img.shields.io/github/license/hassio-addons/repository
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen
+[license-shield]: https://img.shields.io/github/license/NRE-Com-Net/hassio-addons.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
+[reddit]: https://reddit.com/r/homeassistant
 [semver]: http://semver.org/spec/v2.0.0.html
