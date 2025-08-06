@@ -33,4 +33,4 @@ schema:
   mqtt_topic: str?
   mqtt_user: str?
   mqtt_password: str?
-image: ghcr.io/NRE-Com-Net/hassio-addon-snapmaker-monitor/{arch}
+image: ghcr.io/nre-com-net/hassio-addon-snapmaker-monitor/{arch}
