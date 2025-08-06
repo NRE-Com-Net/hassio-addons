@@ -21,5 +21,5 @@ I refactored and modified the original [version][original-script] of the script 
 [github-sponsors]: https://github.com/sponsors/NemesisRE
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-v1.0.1-blue.svg
-[release]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/tree/v1.0.1
+[release-shield]: https://img.shields.io/badge/version-v1.0.2-blue.svg
+[release]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/tree/v1.0.2
