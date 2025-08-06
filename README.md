@@ -35,6 +35,19 @@ https://github.com/NRE-Com-Net/hassio-addons
 
 ## Add-ons provided by this repository
 
+### &#10003; [Snapmaker Monitor][addon-snapmaker-monitor]
+
+![Latest Version][snapmaker-monitor-version-shield]
+![Supports armhf Architecture][snapmaker-monitor-armhf-shield]
+![Supports armv7 Architecture][snapmaker-monitor-armv7-shield]
+![Supports aarch64 Architecture][snapmaker-monitor-aarch64-shield]
+![Supports amd64 Architecture][snapmaker-monitor-amd64-shield]
+![Supports i386 Architecture][snapmaker-monitor-i386-shield]
+
+Python script to monitor Snapmaker 2.0 printer status and send updates to Home Assistant.
+
+[:books: Snapmaker Monitor add-on documentation][addon-doc-snapmaker-monitor]
+
 ## Releases
 
 Releases are based on [Semantic Versioning][semver], and use the format
@@ -60,6 +73,7 @@ You could also open an issue here on GitHub. Note, we use a separate
 GitHub repository for each add-on. Please ensure you are creating the issue
 on the correct GitHub repository matching the add-on.
 
+- [Open an issue for the add-on: Snapmaker Monitor][snapmaker-monitor-issue]
 
 For a general repository issue or add-on ideas [open an issue here][issue]
 
@@ -97,6 +111,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+[addon-snapmaker-monitor]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/tree/v1.0.1
+[addon-doc-snapmaker-monitor]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/blob/v1.0.1/README.md
+[snapmaker-monitor-issue]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/issues
+[snapmaker-monitor-version-shield]: https://img.shields.io/badge/version-v1.0.1-blue.svg
+[snapmaker-monitor-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[snapmaker-monitor-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[snapmaker-monitor-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[snapmaker-monitor-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[snapmaker-monitor-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [awesome-shield]: https://img.shields.io/badge/awesome%3F-yes-brightgreen.svg
 [awesome]: https://awesome-ha.com
 [discord-ha]: https://discord.gg/c5DvZ4e
