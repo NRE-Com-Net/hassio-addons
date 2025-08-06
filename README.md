@@ -29,9 +29,11 @@ Use the following URL to add this repository:
 ### &#10003; [Snapmaker Monitor][addon-snapmaker-monitor]
 
 ![Latest Version][snapmaker-monitor-version-shield]
+![Supports armhf Architecture][snapmaker-monitor-armhf-shield]
 ![Supports armv7 Architecture][snapmaker-monitor-armv7-shield]
 ![Supports aarch64 Architecture][snapmaker-monitor-aarch64-shield]
 ![Supports amd64 Architecture][snapmaker-monitor-amd64-shield]
+![Supports i386 Architecture][snapmaker-monitor-i386-shield]
 
 Python script to monitor Snapmaker 2.0 printer status and send updates to Home Assistant.
 
@@ -89,7 +91,9 @@ SOFTWARE.
 [snapmaker-monitor-version-shield]: https://img.shields.io/badge/version-v1.0.1-blue.svg
 [snapmaker-monitor-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [snapmaker-monitor-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[snapmaker-monitor-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [snapmaker-monitor-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[snapmaker-monitor-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [repository-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
 [repository]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FNRE-Com-Net%2Fhassio-addons
 [forum-NemesisRE]: https://community.home-assistant.io/u/NemesisRE/?u=NemesisRE
