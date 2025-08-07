@@ -5,6 +5,7 @@ name: Repository Updater
 on:
   repository_dispatch:
     types: ["update"]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -23,3 +24,17 @@ jobs:
           addon: ${{ github.event.client_payload.addon }}
           repository: ${{ github.repository }}
           token: ${{ secrets.UPDATER_TOKEN }}
+  deploy:
+    name: Deploy documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --clean --verbose
