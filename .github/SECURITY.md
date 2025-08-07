@@ -62,4 +62,4 @@ Oh, and if we ever meet, I'm happy to buy you a coffee :)
 
 Please contact me, Steven Kurz, directly on:
 
-nemesissre+security@gmail.com (not for support!)
+<nemesissre+security@gmail.com> (not for support!)
