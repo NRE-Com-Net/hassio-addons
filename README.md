@@ -96,12 +96,8 @@ SOFTWARE.
 [snapmaker-monitor-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [repository-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
 [repository]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FNRE-Com-Net%2Fhassio-addons
-[forum-NemesisRE]: https://community.home-assistant.io/u/NemesisRE/?u=NemesisRE
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen
 [forum]: https://community.home-assistant.io?u=NemesisRE
-[NemesisRE]: https://github.com/NemesisRE
-[gitlabci-shield]: https://gitlab.com/NRE-Com-Net/hassio-addons/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/NRE-Com-Net/hassio-addons/pipelines
 [issue]: https://github.com/NRE-Com-Net/hassio-addons/issues
 [license-shield]: https://img.shields.io/github/license/NRE-Com-Net/hassio-addons
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025
