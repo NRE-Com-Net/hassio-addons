@@ -1,7 +1,7 @@
 ---
 # Project information
 site_name: "Home Assistant NRE.Com.Net Add-ons"
-site_url: "https://github.com/NRE-Com-Net/hassio-addons"
+site_url: "https://hassio.nrecom.net"
 site_description: "The primary goal of this project is to provide you (as a Home Assistant user) with add-ons from me."
 site_author: "Steven Kurz"
 copyright: "Copyright 2025 - Steven Kurz"
