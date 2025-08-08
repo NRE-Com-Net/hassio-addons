@@ -1,5 +1,6 @@
-## What's Changed
-* fix: update add-on title to reflect new organization by @NemesisRE in https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/pull/10
+## What’s Changed
 
-
-**Full Changelog**: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/compare/v1.0.1...v1.0.2
+* Update Home Assistant integration configuration defaults (#14) @NemesisRE
+* Specify versions for requests and paho-mqtt in requirements.txt (#13) @NemesisRE
+* Add link to original script in README (#12) @NemesisRE
+* Adjust permissions for release drafter and clean up release types (#11) @NemesisRE

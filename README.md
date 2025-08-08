@@ -85,10 +85,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[addon-snapmaker-monitor]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/tree/v1.0.2
-[addon-doc-snapmaker-monitor]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/blob/v1.0.2/README.md
+[addon-snapmaker-monitor]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/tree/v1.0.3
+[addon-doc-snapmaker-monitor]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/blob/v1.0.3/README.md
 [snapmaker-monitor-issue]: https://github.com/NRE-Com-Net/hassio-addon-snapmaker-monitor/issues
-[snapmaker-monitor-version-shield]: https://img.shields.io/badge/version-v1.0.2-blue.svg
+[snapmaker-monitor-version-shield]: https://img.shields.io/badge/version-v1.0.3-blue.svg
 [snapmaker-monitor-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [snapmaker-monitor-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [snapmaker-monitor-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
