@@ -2,7 +2,7 @@
 
 ![Project Stage][project-stage-shield]
 ![Maintenance][maintenance-shield]
-[![License][license-shield]][license]
+[![License][license-shield]](https://github.com/NRE-Com-Net/hassio-addons/blob/main/LICENSE.md)
 
 [![Community Forum][forum-shield]][forum]
 
@@ -97,7 +97,6 @@ SOFTWARE.
 [forum]: https://community.home-assistant.io?u=NemesisRE
 [issue]: https://github.com/NRE-Com-Net/hassio-addons/issues
 [license-shield]: https://img.shields.io/github/license/NRE-Com-Net/hassio-addons.svg
-[license]: https://github.com/NRE-Com-Net/hassio-addons/blob/main/LICENSE.md
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [repository-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
