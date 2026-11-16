@@ -1,6 +1,6 @@
 ---
 channel: stable
-addons:
+apps:
   snapmaker-monitor:
     repository: nre-com-net/hassio-addon-snapmaker-monitor
     target: snapmaker-monitor

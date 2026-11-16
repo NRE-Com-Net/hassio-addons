@@ -1,13 +1,13 @@
-bin/*
-!bin/create_all.sh
-!bin/create_hassio_addon.sh
-!bin/travis_build.sh
-*.do
-bin/*
-site/*
-pip-selfcheck.json
+# MkDocs build output
+site/
+
+# Python virtual environments
+.venv/
+venv/
 pyvenv.cfg
+pip-selfcheck.json
 include/
 lib/
-venv/
-.translations
+
+# Repository Updater cache
+.repository-updater-cache/

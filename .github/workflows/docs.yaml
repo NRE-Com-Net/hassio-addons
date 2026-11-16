@@ -1,0 +1,48 @@
+---
+name: Documentation
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/CODE_OF_CONDUCT.md
+      - .github/CONTRIBUTING.md
+      - .github/workflows/docs.yaml
+      - docs/**
+      - LICENSE.md
+      - README.md
+      - mkdocs.yml
+      - requirements.txt
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy documentation
+    runs-on: ubuntu-latest
+    permissions:
+      # mkdocs gh-deploy pushes the built site to the gh-pages branch.
+      contents: write
+    steps:
+      - name: ⤵️ Check out code from GitHub
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      - name: 🏗 Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.x"
+          cache: pip
+      - name: 🏗 Install requirements
+        run: pip install -r requirements.txt
+      - name: 🚀 Deploy to GitHub Pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdocs gh-deploy --strict --force --clean --verbose
