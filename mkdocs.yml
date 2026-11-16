@@ -1,10 +1,10 @@
 ---
 # Project information
-site_name: "Home Assistant NRE.Com.Net Add-ons"
+site_name: "Home Assistant NRE.Com.Net Apps"
 site_url: "https://hassio.nrecom.net"
-site_description: "The primary goal of this project is to provide you (as a Home Assistant user) with add-ons from me."
+site_description: "Home Assistant apps (formerly add-ons) maintained by Steven Kurz."
 site_author: "Steven Kurz"
-copyright: "Copyright 2025 - Steven Kurz"
+copyright: "Copyright 2025-2026 - Steven Kurz"
 
 # Repository
 repo_name: "hassio-addons"
@@ -14,22 +14,20 @@ edit_uri: ""
 # Theme configuration
 theme:
   name: "material"
-  logo: "https://avatars3.githubusercontent.com/u/30772201?s=200&v=4"
+  icon:
+    logo: material/home-assistant
   language: "en"
   palette:
     primary: "light-blue"
     accent: "blue"
   font:
-    text: "Exo2"
+    text: "Exo 2"
     code: "Roboto Mono"
-  feature:
-    - tabs
-extra_css:
-  - css/extra.css
+  features:
+    - navigation.tabs
 
 # Customization
 extra:
-  manifest: "manifest.webmanifest"
   social:
     - icon: fontawesome/brands/github-alt
       link: "https://github.com/NemesisRE"
@@ -56,7 +54,7 @@ markdown_extensions:
 
 # The pages to serve
 nav:
-  - "Our Add-ons": "index.md"
+  - "Our Apps": "index.md"
   - "Contributing": "contributing.md"
   - "Code of Conduct": "code-of-conduct.md"
   - "License": "license.md"

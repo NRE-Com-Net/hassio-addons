@@ -1,43 +1,45 @@
-# Home Assistant NRE.Com.Net Add-ons
+# Home Assistant NRE.Com.Net Apps
 
 ![Project Stage][project-stage-shield]
 ![Maintenance][maintenance-shield]
-[![License][license-shield]](LICENSE.md)
+[![License][license-shield]][license]
 
 [![Community Forum][forum-shield]][forum]
 
 ## About
 
-Home Assistant allows anyone to create add-on repositories to share their
-add-ons for Home Assistant easily. This repository is one of those repositories,
-providing extra Home Assistant add-ons for your installation.
+Home Assistant allows anyone to create app repositories to share their
+apps (formerly called add-ons) for Home Assistant easily. This repository
+is one of those repositories, providing extra Home Assistant apps for your
+installation.
 
 The primary goal of this project is to provide you (as a Home Assistant user)
-with additional, add-ons that allow you to take your automated home to the next level.
+with additional apps that allow you to take your automated home to the next
+level.
 
 ## Installation
 
-Adding this add-ons repository to your Home Assistant instance is pretty easy.
-In the Home Assistant add-on store, a possibility to add a repository is provided.
-
-Use the following URL to add this repository:
+Adding this apps repository to your Home Assistant instance is pretty easy.
+Click the button below, or add the repository URL by hand in the
+Home Assistant app store.
 
 [![Add this repository to your Home Assistant instance.][repository-badge]][repository]
 
-## Add-ons provided by this repository
+```txt
+https://github.com/NRE-Com-Net/hassio-addons
+```
+
+## Apps provided by this repository
 
 ### &#10003; [Snapmaker Monitor][addon-snapmaker-monitor]
 
 ![Latest Version][snapmaker-monitor-version-shield]
-![Supports armhf Architecture][snapmaker-monitor-armhf-shield]
-![Supports armv7 Architecture][snapmaker-monitor-armv7-shield]
 ![Supports aarch64 Architecture][snapmaker-monitor-aarch64-shield]
 ![Supports amd64 Architecture][snapmaker-monitor-amd64-shield]
-![Supports i386 Architecture][snapmaker-monitor-i386-shield]
 
 Python script to monitor Snapmaker 2.0 printer status and send updates to Home Assistant.
 
-[:books: Snapmaker Monitor add-on documentation][addon-doc-snapmaker-monitor]
+[:books: Snapmaker Monitor app documentation][addon-doc-snapmaker-monitor]
 
 ## Releases
 
@@ -54,18 +56,18 @@ based on the following:
 Got questions?
 
 You can open an issue here on GitHub. Note, we use a separate GitHub
-repository for each add-on. Please ensure you are creating the issue
-on the correct GitHub repository matching the add-on.
+repository for each app. Please ensure you are creating the issue
+on the correct GitHub repository matching the app.
 
-- [Open an issue for the add-on: Snapmaker Monitor][snapmaker-monitor-issue]
+- [Open an issue for the app: Snapmaker Monitor][snapmaker-monitor-issue]
 
-For a general repository issue or add-on ideas [open an issue here][issue]
+For a general repository issue or app ideas [open an issue here][issue].
 
 ## License
 
 MIT License
 
-Copyright (c) 2025 Steven 'NemesisRE' Kurz
+Copyright (c) 2025-2026 Steven 'NemesisRE' Kurz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -91,15 +93,13 @@ SOFTWARE.
 [snapmaker-monitor-version-shield]: https://img.shields.io/badge/version-v1.0.3-blue.svg
 [snapmaker-monitor-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [snapmaker-monitor-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[snapmaker-monitor-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
-[snapmaker-monitor-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[snapmaker-monitor-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[repository-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
-[repository]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FNRE-Com-Net%2Fhassio-addons
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen
+[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io?u=NemesisRE
 [issue]: https://github.com/NRE-Com-Net/hassio-addons/issues
-[license-shield]: https://img.shields.io/github/license/NRE-Com-Net/hassio-addons
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen
-[semver]: http://semver.org/spec/v2.0.0.html
+[license-shield]: https://img.shields.io/github/license/NRE-Com-Net/hassio-addons.svg
+[license]: https://github.com/NRE-Com-Net/hassio-addons/blob/main/LICENSE.md
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
+[repository-badge]: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
+[repository]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FNRE-Com-Net%2Fhassio-addons
+[semver]: https://semver.org/spec/v2.0.0.html

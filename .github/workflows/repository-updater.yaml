@@ -6,35 +6,36 @@ on:
   repository_dispatch:
     types: ["update"]
   workflow_dispatch:
+    inputs:
+      app:
+        description: Slug of the app to update (empty updates all apps)
+        required: false
+        default: ""
+      force:
+        description: Update even when the app looks up to date
+        type: boolean
+        default: false
 
+# The UPDATER_TOKEN does the writing; the workflow token needs nothing more.
 permissions:
-  contents: write
-
-concurrency:
-  group: queue
+  contents: read
 
 jobs:
   publish:
-    name: Publish add-on update
+    name: Publish app update
     runs-on: ubuntu-latest
+    # One run at a time: a run that finds the repository changed under it
+    # stops instead of committing, so queue them up.
+    concurrency:
+      group: repository-updater
+      cancel-in-progress: false
     steps:
       - name: 🚀 Run Repository Updater
-        uses: hassio-addons/repository-updater@v1.3.0
+        uses: hassio-addons/repository-updater@c7cece7bb502aeae1f3fdcf2b02a5fa200add71d  # v3.0.0
         with:
-          addon: ${{ github.event.client_payload.addon }}
+          # Accept both payload keys: "addon" is what older app repositories send.
+          app: >-
+            ${{ inputs.app || github.event.client_payload.app || github.event.client_payload.addon }}
+          force: ${{ inputs.force || false }}
           repository: ${{ github.repository }}
           token: ${{ secrets.UPDATER_TOKEN }}
-  deploy:
-    name: Deploy documentation
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v7
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force --clean --verbose

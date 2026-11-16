@@ -4,6 +4,8 @@ name: Lint
 # yamllint disable-line rule:truthy
 on:
   push:
+    branches:
+      - main
   pull_request:
     types:
       - opened
@@ -11,23 +13,31 @@ on:
       - synchronize
   workflow_dispatch:
 
-jobs:
-  json:
-    name: JSON Lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v7
-      - name: 🚀 Run JQ
-        run: |
-          shopt -s globstar
-          cat **/*.json | jq '.'
+permissions:
+  contents: read
 
-  yamllint:
-    name: YAMLLint
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  workflows:
+    uses: hassio-addons/workflows/.github/workflows/repository-lint.yaml@adec4b96071354cc44924a6ef9975ff60cf9ddd9  # v5.0.0
+
+  docs:
+    name: Documentation build
     runs-on: ubuntu-latest
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v7
-      - name: 🚀 Run YAMLLint
-        uses: frenck/action-yamllint@v1.5
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - name: 🏗 Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.x"
+          cache: pip
+      - name: 🏗 Install requirements
+        run: pip install -r requirements.txt
+      - name: 🚀 Build documentation
+        run: mkdocs build --strict
